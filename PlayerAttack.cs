@@ -114,10 +114,10 @@ public class PlayerAttack : MonoBehaviour
         {
             
             /*
-            EStats E = hit[i].gameObject.GetComponent<EStats>();// place holder names
-            if (E != null)
+            EnemyControler2D Enemy = hit[i].gameObject.GetComponent<EnemyControler>();// place holder names
+            if (Enemy != null)
             {
-                E.TakeDamage(damage + force); //placeholder names
+                Enemy.TakeDamage(damage + force); //placeholder names
             }
             */
         }
@@ -139,6 +139,7 @@ public class PlayerAttack : MonoBehaviour
         Gizmos.DrawLine(new Vector3(cornerA.position.x, cornerB.position.y), new Vector3(cornerA.position.x, cornerA.position.y));
     }
 }
+
 
 
 
