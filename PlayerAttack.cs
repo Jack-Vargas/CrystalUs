@@ -20,7 +20,7 @@ public class PlayerAttack : MonoBehaviour
     public GameObject projectile;
     public LayerMask EffectedBySword;
 
-    public AudioSource sxf;
+    public AudioSource sxf; // the audio source that holds audio clips. later I will probably add a few more clips or another audio source for the projectile
 
 
     // Update is called once per frame
@@ -138,4 +138,5 @@ public class PlayerAttack : MonoBehaviour
         Gizmos.DrawLine(new Vector3(cornerA.position.x, cornerB.position.y), new Vector3(cornerA.position.x, cornerA.position.y));
     }
 }
+
 
