@@ -118,7 +118,8 @@ public class PlayerAttack : MonoBehaviour
             if (E != null)
             {
                 E.TakeDamage(damage + force); //placeholder names
-            }*/
+            }
+            */
         }
 
         chargeProgress = 0;
@@ -138,6 +139,7 @@ public class PlayerAttack : MonoBehaviour
         Gizmos.DrawLine(new Vector3(cornerA.position.x, cornerB.position.y), new Vector3(cornerA.position.x, cornerA.position.y));
     }
 }
+
 
 
 
