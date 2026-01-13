@@ -20,6 +20,9 @@ public class PlayerAttack : MonoBehaviour
     public GameObject projectile;
     public LayerMask EffectedBySword;
 
+    public AudioSource sxf;
+
+
     // Update is called once per frame
     void Update()
     {
@@ -103,6 +106,7 @@ public class PlayerAttack : MonoBehaviour
 
     public void Slash()
     {
+        sfx.Play();
         force = chargeProgress;
 
         Collider2D[] hit = Physics2D.OverlapAreaAll(cornerA.position, cornerB.position, EffectedBySword);
@@ -134,3 +138,4 @@ public class PlayerAttack : MonoBehaviour
         Gizmos.DrawLine(new Vector3(cornerA.position.x, cornerB.position.y), new Vector3(cornerA.position.x, cornerA.position.y));
     }
 }
+
